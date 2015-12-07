@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DBFM" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZOP-GT-B8O">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qne-xR-FKS">
+                                <rect key="frame" x="60" y="30" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1Qa-oq-H8r"/>
+                                    <constraint firstAttribute="height" constant="200" id="lOS-wc-Da2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timeBg" translatesAutoresizingMaskIntoConstraints="NO" id="gwA-UN-GVw">
+                                <rect key="frame" x="125" y="95" width="70" height="70"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="AuR-9L-TBU"/>
+                                    <constraint firstAttribute="height" constant="70" id="df6-UF-MHH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK0-hH-dVu">
+                                <rect key="frame" x="125" y="119" width="70" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZOP-GT-B8O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="1pS-nZ-Sfn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZOP-GT-B8O" secondAttribute="bottom" id="BtH-9x-ajd"/>
+                            <constraint firstItem="Qne-xR-FKS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CE5-Ka-G5s"/>
+                            <constraint firstItem="ZOP-GT-B8O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ChZ-38-95V"/>
+                            <constraint firstItem="Qne-xR-FKS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IE7-Bg-Fxl"/>
+                            <constraint firstItem="Qne-xR-FKS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-154" id="JIk-3V-ASG"/>
+                            <constraint firstItem="gwA-UN-GVw" firstAttribute="centerY" secondItem="Qne-xR-FKS" secondAttribute="centerY" id="LQi-G5-6Pe"/>
+                            <constraint firstItem="XK0-hH-dVu" firstAttribute="trailing" secondItem="Qne-xR-FKS" secondAttribute="trailing" id="aHe-5Q-fUV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZOP-GT-B8O" secondAttribute="trailing" constant="-20" id="c3j-jl-Vvs"/>
+                            <constraint firstItem="Qne-xR-FKS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="d4p-Xo-htk"/>
+                            <constraint firstItem="XK0-hH-dVu" firstAttribute="centerX" secondItem="Qne-xR-FKS" secondAttribute="centerX" id="goh-bu-Z2J"/>
+                            <constraint firstItem="ZOP-GT-B8O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jHk-5d-4zg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZOP-GT-B8O" secondAttribute="bottom" id="kfm-3g-bfP"/>
+                            <constraint firstItem="Qne-xR-FKS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="lY1-1d-KJX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZOP-GT-B8O" secondAttribute="trailing" constant="-20" id="oGp-gO-h2Q"/>
+                            <constraint firstItem="gwA-UN-GVw" firstAttribute="centerX" secondItem="Qne-xR-FKS" secondAttribute="centerX" id="qA5-Gn-tGH"/>
+                            <constraint firstItem="ZOP-GT-B8O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="sSZ-xW-zF1"/>
+                            <constraint firstItem="XK0-hH-dVu" firstAttribute="centerY" secondItem="Qne-xR-FKS" secondAttribute="centerY" id="t3Y-2E-CGc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1pS-nZ-Sfn"/>
+                                <exclude reference="c3j-jl-Vvs"/>
+                                <exclude reference="jHk-5d-4zg"/>
+                                <exclude reference="CE5-Ka-G5s"/>
+                                <exclude reference="JIk-3V-ASG"/>
+                                <exclude reference="lY1-1d-KJX"/>
+                                <exclude reference="aHe-5Q-fUV"/>
+                                <exclude reference="BtH-9x-ajd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="396"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="200" height="200"/>
+        <image name="timeBg" width="70" height="70"/>
+    </resources>
+</document>
