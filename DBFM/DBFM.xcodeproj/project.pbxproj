@@ -12,6 +12,7 @@
 		1238F5471C15B0CA00C3E2C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1238F5451C15B0CA00C3E2C4 /* Main.storyboard */; };
 		1238F5491C15B0CA00C3E2C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1238F5481C15B0CA00C3E2C4 /* Assets.xcassets */; };
 		1238F54C1C15B0CA00C3E2C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1238F54A1C15B0CA00C3E2C4 /* LaunchScreen.storyboard */; };
+		1238F5541C15CB3400C3E2C4 /* CoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238F5531C15CB3400C3E2C4 /* CoverImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1238F5481C15B0CA00C3E2C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1238F54B1C15B0CA00C3E2C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1238F54D1C15B0CA00C3E2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1238F5531C15CB3400C3E2C4 /* CoverImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				1238F5411C15B0CA00C3E2C4 /* AppDelegate.swift */,
 				1238F5431C15B0CA00C3E2C4 /* ViewController.swift */,
+				1238F5531C15CB3400C3E2C4 /* CoverImage.swift */,
 				1238F5451C15B0CA00C3E2C4 /* Main.storyboard */,
 				1238F5481C15B0CA00C3E2C4 /* Assets.xcassets */,
 				1238F54A1C15B0CA00C3E2C4 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				1238F5441C15B0CA00C3E2C4 /* ViewController.swift in Sources */,
 				1238F5421C15B0CA00C3E2C4 /* AppDelegate.swift in Sources */,
+				1238F5541C15CB3400C3E2C4 /* CoverImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
