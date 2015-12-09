@@ -1,0 +1,3 @@
+[submodule "DBFM/Alamofire"]
+	path = DBFM/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
