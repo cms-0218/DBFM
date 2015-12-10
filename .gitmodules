@@ -1,3 +1,6 @@
 [submodule "DBFM/Alamofire"]
 	path = DBFM/Alamofire
 	url = https://github.com/Alamofire/Alamofire.git
+[submodule "DBFM/SwiftyJSON"]
+	path = DBFM/SwiftyJSON
+	url = https://github.com/SwiftyJSON/SwiftyJSON.git
