@@ -63,7 +63,7 @@
                                 </constraints>
                                 <state key="normal" image="pre"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-X1-zT3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-X1-zT3" userLabel="Btn Play">
                                 <rect key="frame" x="145" y="251" width="34" height="34"/>
                                 <animations/>
                                 <constraints>
@@ -194,7 +194,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="bg" destination="ZOP-GT-B8O" id="2OK-4J-yc5"/>
+                        <outlet property="btnNext" destination="IEW-su-kjl" id="NNn-eb-992"/>
+                        <outlet property="btnPlay" destination="eTV-X1-zT3" id="OhA-vc-AhQ"/>
+                        <outlet property="btnPre" destination="oSn-ri-3ia" id="ocp-uu-KzG"/>
                         <outlet property="iv" destination="Qne-xR-FKS" id="iXr-kZ-qVp"/>
+                        <outlet property="playTimeLabel" destination="XK0-hH-dVu" id="SaA-zq-RuX"/>
                         <outlet property="songTv" destination="QOa-zg-x62" id="BSt-W3-Fq4"/>
                     </connections>
                 </viewController>
