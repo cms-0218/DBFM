@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120088541C1A607B008D1896 /* dbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120088531C1A607B008D1896 /* dbButton.swift */; };
 		1233E4F91C1823490084908E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1233E4EC1C18233B0084908E /* Alamofire.framework */; };
 		1233E4FA1C1823490084908E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1233E4EC1C18233B0084908E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1233E4FF1C1823930084908E /* HttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1233E4FE1C1823930084908E /* HttpController.swift */; };
@@ -154,6 +155,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		120088531C1A607B008D1896 /* dbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dbButton.swift; sourceTree = "<group>"; };
 		1233E4E11C18233B0084908E /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		1233E4FE1C1823930084908E /* HttpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpController.swift; sourceTree = "<group>"; };
 		1238F53E1C15B0CA00C3E2C4 /* DBFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +231,7 @@
 				1238F54A1C15B0CA00C3E2C4 /* LaunchScreen.storyboard */,
 				1238F54D1C15B0CA00C3E2C4 /* Info.plist */,
 				124FD0221C1956AA00688A76 /* orderBtn.swift */,
+				120088531C1A607B008D1896 /* dbButton.swift */,
 			);
 			path = DBFM;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				12A0C6D21C1904D50032E8B0 /* ChannelController.swift in Sources */,
 				1233E4FF1C1823930084908E /* HttpController.swift in Sources */,
 				124FD0331C1957CD00688A76 /* HRToast+UIView.swift in Sources */,
+				120088541C1A607B008D1896 /* dbButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

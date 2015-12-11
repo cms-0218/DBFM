@@ -54,7 +54,15 @@ class ChannelController: UIViewController,UITableViewDataSource,UITableViewDeleg
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
-  
+    //设置cell的显示动画
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        //设置cell的显示动画为3d缩放，xy方向的缩放动画，初始值为0.1 结束值为1
+        cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1)
+        UIView.animateWithDuration(0.25, animations: { () -> Void in
+            cell.layer.transform = CATransform3DMakeScale(1, 1, 1)
+        })
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

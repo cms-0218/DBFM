@@ -41,11 +41,21 @@
                                 <rect key="frame" x="0.0" y="248" width="322" height="40"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="progressBg" translatesAutoresizingMaskIntoConstraints="NO" id="vVC-Wa-DH5">
-                                <rect key="frame" x="0.0" y="248" width="10" height="40"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LmT-MH-3p5">
+                                <rect key="frame" x="0.0" y="248" width="322" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="progressBg" translatesAutoresizingMaskIntoConstraints="NO" id="vVC-Wa-DH5">
+                                        <rect key="frame" x="0.0" y="0.0" width="5" height="40"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
                                 <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t68-by-HqV">
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eXs-9a-Ucf"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t68-by-HqV" customClass="OrderButton" customModule="DBFM" customModuleProvider="target">
                                 <rect key="frame" x="9" y="256" width="25" height="25"/>
                                 <animations/>
                                 <constraints>
@@ -63,7 +73,7 @@
                                 </constraints>
                                 <state key="normal" image="pre"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-X1-zT3" userLabel="Btn Play">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-X1-zT3" userLabel="Btn Play" customClass="dbButton" customModule="DBFM" customModuleProvider="target">
                                 <rect key="frame" x="145" y="251" width="34" height="34"/>
                                 <animations/>
                                 <constraints>
@@ -128,7 +138,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timeBg" translatesAutoresizingMaskIntoConstraints="NO" id="gwA-UN-GVw" customClass="CoverImage" customModule="DBFM" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timeBg" translatesAutoresizingMaskIntoConstraints="NO" id="gwA-UN-GVw" customClass="CoverImage" customModule="DBFM" customModuleProvider="target">
                                 <rect key="frame" x="125" y="95" width="70" height="70"/>
                                 <animations/>
                                 <constraints>
@@ -148,6 +158,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZOP-GT-B8O" secondAttribute="bottom" id="BtH-9x-ajd"/>
                             <constraint firstItem="Qne-xR-FKS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CE5-Ka-G5s"/>
                             <constraint firstItem="ZOP-GT-B8O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ChZ-38-95V"/>
+                            <constraint firstItem="LmT-MH-3p5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Fad-dY-yhY"/>
                             <constraint firstItem="Qne-xR-FKS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IE7-Bg-Fxl"/>
                             <constraint firstItem="Qne-xR-FKS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-154" id="JIk-3V-ASG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QOa-zg-x62" secondAttribute="trailing" constant="-20" id="JQg-sY-vwj"/>
@@ -157,9 +168,10 @@
                             <constraint firstItem="t68-by-HqV" firstAttribute="centerY" secondItem="BZ1-qG-PE0" secondAttribute="centerY" id="OPi-vi-S5f"/>
                             <constraint firstItem="IEW-su-kjl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="67.5" id="Oxl-sg-pUb"/>
                             <constraint firstItem="t68-by-HqV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-138.5" id="PjZ-fJ-ziq"/>
-                            <constraint firstItem="vVC-Wa-DH5" firstAttribute="centerY" secondItem="BZ1-qG-PE0" secondAttribute="centerY" id="ZYv-6a-5Hk"/>
+                            <constraint firstItem="LmT-MH-3p5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="228" id="XAx-DN-tTu"/>
                             <constraint firstItem="BZ1-qG-PE0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ZjY-kQ-yen"/>
                             <constraint firstItem="XK0-hH-dVu" firstAttribute="trailing" secondItem="Qne-xR-FKS" secondAttribute="trailing" id="aHe-5Q-fUV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LmT-MH-3p5" secondAttribute="trailing" constant="-22" id="bCm-uf-xlh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZOP-GT-B8O" secondAttribute="trailing" constant="-20" id="c3j-jl-Vvs"/>
                             <constraint firstItem="Qne-xR-FKS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="d4p-Xo-htk"/>
                             <constraint firstItem="eTV-X1-zT3" firstAttribute="centerY" secondItem="oSn-ri-3ia" secondAttribute="centerY" id="dl9-49-juT"/>
@@ -195,16 +207,18 @@
                     <connections>
                         <outlet property="bg" destination="ZOP-GT-B8O" id="2OK-4J-yc5"/>
                         <outlet property="btnNext" destination="IEW-su-kjl" id="NNn-eb-992"/>
-                        <outlet property="btnPlay" destination="eTV-X1-zT3" id="OhA-vc-AhQ"/>
+                        <outlet property="btnOrder" destination="t68-by-HqV" id="Psa-Yi-J9W"/>
+                        <outlet property="btnPlay" destination="eTV-X1-zT3" id="6GN-G7-SUy"/>
                         <outlet property="btnPre" destination="oSn-ri-3ia" id="ocp-uu-KzG"/>
                         <outlet property="iv" destination="Qne-xR-FKS" id="iXr-kZ-qVp"/>
                         <outlet property="playTimeLabel" destination="XK0-hH-dVu" id="SaA-zq-RuX"/>
+                        <outlet property="songProgress" destination="vVC-Wa-DH5" id="jOL-re-Ogh"/>
                         <outlet property="songTv" destination="QOa-zg-x62" id="BSt-W3-Fq4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93" y="209"/>
+            <point key="canvasLocation" x="-196" y="209"/>
         </scene>
         <!--Channel Controller-->
         <scene sceneID="aiq-HL-jxY">
@@ -273,12 +287,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fi2-gh-Hup" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="461" y="209"/>
+            <point key="canvasLocation" x="159" y="214"/>
         </scene>
     </scenes>
     <resources>
         <image name="channel" width="40" height="40"/>
-        <image name="logo" width="200" height="200"/>
+        <image name="logo" width="256" height="256"/>
         <image name="next" width="40" height="40"/>
         <image name="order1" width="40" height="40"/>
         <image name="pause" width="40" height="40"/>
