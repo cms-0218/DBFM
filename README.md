@@ -15,7 +15,7 @@
 
 # Final Effect
 
-![image](https://github.com/cms-0218/DBFM/raw/master/about.gif)
+![image](https://github.com/cms-0218/DBFM/raw/master/final_effect.gif)
 
 ---
 
